@@ -1,0 +1,72 @@
+header {
+    background-color: #6690cf;
+    color: white;
+    padding: 10px 0;
+    box-sizing: border-box;    
+}
+
+body {
+    background-color: url('img/salão.png');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0, 5);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #333;
+}
+
+nav {
+    margin: 10px 0;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    border-radius: 100px; 
+    box-sizing: border-box;
+}
+
+.logo {
+    height: 400px;
+    vertical-align: middle;
+}
+
+footer {
+    background-color: #6690cf;
+    color: white;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.rodizio {
+    background-color: #6690cf;
+    margin: left 500px;
+    padding: 20px;
+    width: 350px;
+    height: 300px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    position: absolute;
+    top: 550px;
+    left: 250px;
+} 
+
+.horario {
+    background-color: #6690cf;
+    margin: left 500px;
+    padding: 20px;
+    width: 350px;
+    height: 350px;
+    box-sizing: border-box;
+    border: 4px solid black;
+    position: absolute;
+    top: 550px;
+    left: 1300px;
+}
+
+#titulo {
+    color: white;
+    text-align: center;
+}
