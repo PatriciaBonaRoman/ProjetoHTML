@@ -1,24 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BONA-Sushiegrill</title>
     <link rel="stylesheet" href="css/css.css">
 </head>
+
 <body>
     <header>
         <img class="logo" src="img/logo.png" alt="Logo do Restaurante BONA Sushi e Grill">
         <nav>
             <ul>
-            || <a href="index.html">Home</a> ||
-            <a href="sobre.html">Sobre Nós</a> ||
-            <a href="menu.html">Menu</a> ||
+                || <a href="index.html">Home</a> ||
+                <a href="sobre.html">Sobre Nós</a> ||
+                <a href="menu.html">Menu</a> ||
+            </ul>
         </nav>
     </header>
+
     <body>
         <img class="salao" src="img/salão.png" alt="Foto do Salão do Restaurante">
-        
+
         <div class="rodizio">
             <h1 id="titulo">Valores do Rodizio</h1>
             <h2>R$ 89,90 por pessoa</h2>
@@ -26,27 +30,61 @@
             <h3>Crianças de 6 a 10 anos: R$ 44,90</h3>
             <h3>Acima de 10 anos: Valor integral</h3>
         </div>
-            <section class="horario">
-                <h1 id="titulo">Horário de Funcionamento</h1>
-                <h2>Seg - sex: 19hrs às 22:30hrs </h2>
-                <h2>Sábados: 19hrs às 22:30hrs</h2>
-                <h2>Domingos: Fechado</h2>
-            </section>
-        <div class="contato">
-            <h1>Endereço:</h1>
-                <h3>Rua das Cerejeiras, 128 – Bairro Central, São Miguel do Oeste, SC</h3>
-            <h2>Telefone</h2>
-                <h3>(49) 3456-7890</h3> 
-            <h2>WhatsApp</h2>
-                <h3>(49) 98765-4321</h3>  
-            <h2>Email</h2>
-                <h3>contato@bonasushi.com.br</h3>
-        </div>    
-        <img class="wpp" src="img/wpp.png" alt="Logo do WhatsApp">
 
-       <footer>
-        <p>© 2025 BONA Sushi e Grill. Todos os direitos reservados.</p>
-       </footer>
-        
+        <div id="meio">
+            <img class="meio" src="img/logo.png" alt="Logo do Restaurante BONA Sushi e Grill">
+        </div>
+
+        <section class="horario">
+            <h1 id="titulo">Horário de Funcionamento</h1>
+            <h2>Seg - sex: 19hrs às 22:30hrs </h2>
+            <h2>Sábados: 19hrs às 22:30hrs</h2>
+            <h2>Domingos: Fechado</h2>
+        </section>
+
+        <div id="meio">
+            <img class="meio" src="img/logo.png" alt="Logo do Restaurante BONA Sushi e Grill">
+        </div>
+
+        <div class="endereco">
+            <h1 id="titulo">Endereço:</h1>
+            <h3>Rua das Cerejeiras, 128 </h3>
+            <h3>Bairro Central</h3>
+            <h3>São Miguel do Oeste, SC</h3>
+            <h3>CEP: 12345-777</h3>
+        </div>
+
+        <div class="contato">
+            <img class="wpp" src="img/telefone2.webp" alt="Logo do telefone">
+            <h1 id="titulo">Telefone</h1>
+            <h3>(49) 3456-7890</h3>
+            <img class="wpp" src="img/wpp.png" alt="Logo do WhatsApp">
+            <h1 id="titulo">WhatsApp</h1>
+            <h3>(49) 98765-4321</h3>
+            <img class="wpp" src="img/email.jpg" alt="Logo do Email">
+            <h1 id="titulo">Email</h1>
+            <h3>contato@bonasushi.com.br</h3>
+        </div>
+
+        <div class="form">
+        <h2>Quem acessou o site?</h2>
+        <p>Coloque seu nome e e-mail,</p>
+        <p>para receber nossas novidades!</p>
+        <form action="salvar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <input type="submit" value="Enviar">
+        </form>
+        </div>
+            <button class="botao" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">Voltar ao topo</button>
+
+            <footer>
+                <p>© 2025 BONA Sushi e Grill. Todos os direitos reservados.</p>
+            </footer>
     </body>
+
 </html>
