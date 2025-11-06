@@ -1,14 +1,32 @@
 <?php
+include("Conexao.php");
+
+$conexao = new Conexao();
+$conn = $conexao->conectar();
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = htmlspecialchars($_POST['nome']);
-    $email = htmlspecialchars($_POST['email']);
-    $dataHora = date("Y-m-d H:i:s");
-    $ip = $_SERVER['REMOTE_ADDR']; // captura o IP do visitante
+    $nome = trim($_POST['nome']);
+    $email = trim($_POST['email']);
 
-    $linha = "$dataHora - $ip - $nome - $email" . PHP_EOL;
+    if (!empty($nome) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        try {
+            $stmt = $conn->prepare("INSERT INTO visitantes (nome, email) VALUES (:nome, :email)");
+            $stmt->bindParam(':nome', $nome);
+            $stmt->bindParam(':email', $email);
 
-    file_put_contents("acessos.txt", $linha, FILE_APPEND);
+            if ($stmt->execute()) {
+                header("Location: listar.php");
+                exit();
+            } else {
+                echo "❌ Erro ao salvar no banco de dados.";
+            }
 
-    echo "Obrigado! Seus dados foram registrados.";
+        } catch (PDOException $e) {
+            echo "Erro: " . $e->getMessage();
+        }
+
+    } else {
+        echo "⚠️ Por favor, preencha todos os campos corretamente.";
+    }
 }
 ?>
