@@ -1,32 +1,24 @@
 <?php
-include("Conexao.php");
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
 
-$conexao = new Conexao();
-$conn = $conexao->conectar();
+include("conexao.php");
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = trim($_POST['nome']);
-    $email = trim($_POST['email']);
+$nome = trim($_POST['nome']);
+$email = trim($_POST['email']);
 
-    if (!empty($nome) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        try {
-            $stmt = $conn->prepare("INSERT INTO visitantes (nome, email) VALUES (:nome, :email)");
-            $stmt->bindParam(':nome', $nome);
-            $stmt->bindParam(':email', $email);
+if (!empty($nome) && filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
-            if ($stmt->execute()) {
-                header("Location: listar.php");
-                exit();
-            } else {
-                echo "❌ Erro ao salvar no banco de dados.";
-            }
-
-        } catch (PDOException $e) {
-            echo "Erro: " . $e->getMessage();
-        }
-
-    } else {
-        echo "⚠️ Por favor, preencha todos os campos corretamente.";
+    try {
+        $stmt = $conn->prepare("INSERT INTO clientes_promocoes (nome, email) VALUES (?, ?)");
+        $stmt->bind_param("ss", $nome, $email);
+        $stmt->execute();
+        echo "<script>alert('Cadastro realizado com sucesso!'); window.location.href='index.html';</script>";
+    } catch (Exception $e) {
+        echo "<script>alert('Erro ao salvar: e-mail já cadastrado ou problema no servidor'); window.location.href='index.html';</script>";
     }
+
+} else {
+    echo "<script>alert('Dados inválidos'); window.location.href='index.html';</script>";
 }
 ?>
