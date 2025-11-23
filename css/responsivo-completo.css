@@ -1,0 +1,886 @@
+@media screen and (min-width: 320px) {
+    body {
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .logo {
+        height: 80px;
+        width: auto;
+        max-width: 200px;
+    }
+
+    nav {
+        width: 95%;
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        gap: 5px;
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    nav ul a {
+        padding: 4px 8px;
+        white-space: nowrap;
+    }
+
+    .container {
+        padding: 20px 10px;
+        padding-bottom: 200px;
+    }
+
+    .box {
+        max-width: 100%;
+        padding: 15px;
+        margin: 10px auto;
+        font-size: 13px;
+    }
+
+    .sobre-conteudo p {
+        font-size: 1.2em;
+        line-height: 1.6;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1.5em;
+    }
+
+    .home-grid,
+    .menu-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .wpp {
+        width: 18px;
+        height: 18px;
+    }
+
+    .botao {
+        font-size: 11px;
+        padding: 8px 12px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        padding: 15px 10px;
+        font-size: 12px;
+        text-align: center;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+
+    form input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .logo {
+        height: 90px;
+        max-width: 220px;
+    }
+
+    nav ul {
+        font-size: 13px;
+        gap: 6px;
+    }
+
+    .box {
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 15px;
+    }
+
+    .wpp {
+        width: 20px;
+        height: 20px;
+    }
+
+    .botao {
+        font-size: 12px;
+        padding: 9px 14px;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    body {
+        font-size: 15px;
+    }
+
+    .logo {
+        height: 100px;
+        max-width: 250px;
+    }
+
+    nav {
+        width: 90%;
+        padding: 6px;
+    }
+
+    nav ul {
+        font-size: 14px;
+        gap: 8px;
+    }
+
+    .container {
+        padding: 30px 15px;
+        padding-bottom: 220px;
+    }
+
+    .box {
+        max-width: 350px;
+        padding: 18px;
+        font-size: 15px;
+    }
+
+    .sobre-conteudo p {
+        font-size: 1.25em;
+        line-height: 1.7;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1.6em;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    h2 {
+        font-size: 19px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    .wpp {
+        width: 22px;
+        height: 22px;
+    }
+
+    .botao {
+        font-size: 13px;
+        padding: 10px 15px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 13px;
+        padding: 20px 15px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .logo {
+        height: 120px;
+        max-width: 280px;
+    }
+
+    nav {
+        width: 85%;
+        padding: 7px;
+    }
+
+    nav ul {
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .container {
+        padding: 35px 20px;
+    }
+
+    .box {
+        max-width: 400px;
+        padding: 20px;
+    }
+
+    .sobre-conteudo p {
+        font-size: 1.3em;
+        line-height: 1.7;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1.7em;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 17px;
+    }
+
+    .wpp {
+        width: 24px;
+        height: 24px;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    form input[type="submit"] {
+        width: auto;
+        min-width: 150px;
+        max-width: 400px;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+
+    .logo {
+        height: 130px;
+        max-width: 300px;
+    }
+
+    nav {
+        width: 80%;
+        padding: 8px;
+    }
+
+    nav ul {
+        font-size: 16px;
+        gap: 12px;
+    }
+
+    .container {
+        padding: 40px 25px;
+        max-width: 1200px;
+    }
+
+    .box {
+        max-width: 420px;
+        padding: 22px;
+    }
+
+    .sobre-conteudo p {
+        font-size: 1.35em;
+        line-height: 1.8;
+    }
+
+    .sobre-conteudo h2 {
+        font-size: 1.8em;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .wpp {
+        width: 25px;
+        height: 25px;
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 12px 18px;
+        bottom: 25px;
+        right: 25px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 14px;
+        padding: 25px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .logo {
+        height: 140px;
+        max-width: 320px;
+    }
+
+    nav {
+        width: 75%;
+    }
+
+    nav ul {
+        font-size: 17px;
+        gap: 15px;
+    }
+
+    .container {
+        padding: 45px 30px;
+    }
+
+    .box {
+        max-width: 450px;
+        padding: 25px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    h3 {
+        font-size: 19px;
+    }
+
+    .botao {
+        font-size: 15px;
+        padding: 13px 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo {
+        height: 150px;
+        max-width: 350px;
+    }
+
+    nav {
+        width: 70%;
+        padding: 10px;
+    }
+
+    nav ul {
+        font-size: 18px;
+        gap: 18px;
+    }
+
+    .container {
+        padding: 50px 40px;
+    }
+
+    .box {
+        max-width: 480px;
+        padding: 28px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .wpp {
+        width: 28px;
+        height: 28px;
+    }
+
+    .botao {
+        font-size: 16px;
+        padding: 14px 22px;
+        bottom: 30px;
+        right: 30px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 15px;
+        padding: 30px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .logo {
+        height: 160px;
+        max-width: 380px;
+    }
+
+    nav {
+        width: 65%;
+    }
+
+    nav ul {
+        font-size: 19px;
+        gap: 20px;
+    }
+
+    .container {
+        padding: 60px 50px;
+        max-width: 1400px;
+    }
+
+    .box {
+        max-width: 500px;
+        padding: 30px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+
+    .wpp {
+        width: 30px;
+        height: 30px;
+    }
+
+    .botao {
+        font-size: 17px;
+        padding: 15px 25px;
+        bottom: 35px;
+        right: 35px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 16px;
+        padding: 35px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logo {
+        height: 170px;
+        max-width: 400px;
+    }
+
+    nav {
+        width: 60%;
+    }
+
+    nav ul {
+        font-size: 20px;
+        gap: 22px;
+    }
+
+    .container {
+        padding: 70px 60px;
+        max-width: 1600px;
+    }
+
+    .box {
+        max-width: 520px;
+        padding: 32px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 45px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 45px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 24px;
+    }
+
+    .wpp {
+        width: 32px;
+        height: 32px;
+    }
+
+    .botao {
+        font-size: 18px;
+        padding: 16px 28px;
+        bottom: 40px;
+        right: 40px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 17px;
+        padding: 40px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .logo {
+        height: 180px;
+        max-width: 450px;
+    }
+
+    nav {
+        width: 55%;
+        padding: 12px;
+    }
+
+    nav ul {
+        font-size: 22px;
+        gap: 25px;
+    }
+
+    .container {
+        padding: 80px 80px;
+        max-width: 1800px;
+    }
+
+    .box {
+        max-width: 550px;
+        padding: 35px;
+        font-size: 18px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 26px;
+    }
+
+    .wpp {
+        width: 35px;
+        height: 35px;
+    }
+
+    .botao {
+        font-size: 20px;
+        padding: 18px 32px;
+        bottom: 50px;
+        right: 50px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 18px;
+        padding: 50px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        font-size: 18px;
+        padding: 12px;
+    }
+
+    form input[type="submit"] {
+        font-size: 18px;
+        padding: 14px 30px;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .logo {
+        height: 200px;
+        max-width: 500px;
+    }
+
+    nav {
+        width: 50%;
+        padding: 15px;
+    }
+
+    nav ul {
+        font-size: 24px;
+        gap: 30px;
+    }
+
+    .container {
+        padding: 100px 100px;
+        max-width: 2200px;
+    }
+
+    .box {
+        max-width: 600px;
+        padding: 40px;
+        font-size: 20px;
+    }
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 60px;
+    }
+
+    .menu-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 60px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    .wpp {
+        width: 40px;
+        height: 40px;
+    }
+
+    .botao {
+        font-size: 22px;
+        padding: 20px 40px;
+        bottom: 60px;
+        right: 60px;
+    }
+
+    footer {
+        background-color: #6690cf;
+        color: white;
+        font-size: 20px;
+        padding: 60px;
+        margin-top: auto;
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    form input[type="text"],
+    form input[type="email"] {
+        font-size: 20px;
+        padding: 14px;
+    }
+
+    form input[type="submit"] {
+        font-size: 20px;
+        padding: 16px 40px;
+    }
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape) {
+    .logo {
+        height: 70px;
+    }
+
+    nav {
+        padding: 4px;
+    }
+
+    nav ul {
+        font-size: 12px;
+        gap: 5px;
+    }
+
+    .container {
+        padding: 20px 10px;
+        padding-bottom: 150px;
+    }
+
+    .box {
+        padding: 12px;
+        margin: 8px auto;
+    }
+}
+
+@media print {
+    .salao {
+        display: none;
+    }
+
+    .botao {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+        color: black;
+    }
+
+    .box {
+        border: 1px solid #000;
+        page-break-inside: avoid;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+@media (prefers-contrast: high) {
+    .box {
+        border-width: 5px;
+    }
+
+    nav ul a {
+        text-decoration: underline;
+    }
+}
+

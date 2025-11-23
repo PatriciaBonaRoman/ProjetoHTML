@@ -1,69 +1,192 @@
-
-img {
-    max-width: 100%;
-    height: auto;
+.salao {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
+    opacity: .7;
 }
 
-header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
+body {
+    min-height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
-p, h1, h2, h3 {
-    padding-left: 10px;
-    padding-right: 10px;
+.container {
+    padding-bottom: 250px;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    gap: 25px;
+}
+
+footer {
+    margin-top: 40px;
+}
+
+.box {
+    background: #6690cf;
+    padding: 20px;
+    border: 4px solid black;
+    color: white;
+    border-radius: 10px;
+}
+
+main, section, .container {
+    min-height: 100vh;
+}
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+@media (min-width: 900px) {
+    .home-grid { grid-template-columns: 1fr 1fr; }
+    .menu-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 899px) {
+    .home-grid,
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        width: 180px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .logo {
+        height: 130px;
+    }
+
+    nav {
+        width: 95%;
+    }
+
+    nav ul {
+        gap: 10px;
+        font-size: 18px;
+    }
+
+    .home-grid,
+    .menu-grid {
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .box {
+        max-width: 360px;
+    }
 }
 
 @media (max-width: 768px) {
 
-   .salao {
-    width: 100%;
-    height: auto;
-    display: block;
-}
-
     .logo {
-        width: 120px;
+        height: 110px;
     }
 
-    #meio img.meio {
-        width: 150px;
+    nav {
+        padding: 6px;
     }
 
-    .rodizio, .horario, .endereco, .contato, .combinados,
-    .entradas, .rolls, .pratos, .bebidas, .pratosquentes,
-    .extras, #sobre, .form {
-        width: 95%;
-        margin: auto;
-        text-align: center;
+    nav ul {
+        font-size: 16px;
+        gap: 8px;
     }
 
-    .wpp {
-        width: 40px;
+    .box {
+        max-width: 330px;
+        padding: 18px;
+    }
+
+    .home-grid,
+    .menu-grid {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 480px) {
-    h1 {
-        font-size: 22px;
-    }
-    h2 {
-        font-size: 18px;
-    }
-    h3 {
-        font-size: 16px;
-    }
 
     .logo {
-        width: 100px;
+        height: 90px;
     }
 
-    header nav ul {
-        font-size: 16px;
+    nav {
+        padding: 5px;
+        border-radius: 50px;
+    }
+
+    nav ul {
+        font-size: 14px;
+        gap: 6px;
+    }
+
+    .box {
+        max-width: 310px;
+        padding: 16px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 17px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    .wpp {
+        width: 20px;
+    }
+
+    .botao {
+        font-size: 14px;
+        padding: 8px 12px;
     }
 }
 
+@media (max-width: 360px) {
 
+    .logo {
+        height: 75px;
+    }
 
+    nav ul {
+        font-size: 12px;
+        gap: 4px;
+    }
+
+    .box {
+        max-width: 280px;
+        padding: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    h2 {
+        font-size: 15px;
+    }
+
+    h3 {
+        font-size: 13px;
+    }
+
+    .botao {
+        font-size: 12px;
+        padding: 7px 10px;
+    }
+}
