@@ -33,12 +33,20 @@
     .container {
         padding: 20px 10px;
         padding-bottom: 200px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
         max-width: 100%;
         padding: 15px;
-        margin: 10px auto;
+        margin: 0;
         font-size: 13px;
     }
 
@@ -174,12 +182,21 @@
     .container {
         padding: 30px 15px;
         padding-bottom: 220px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 350px;
+        max-width: 100%;
         padding: 18px;
         font-size: 15px;
+        margin: 0;
     }
 
     .sobre-conteudo p {
@@ -243,11 +260,20 @@
 
     .container {
         padding: 35px 20px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 400px;
+        max-width: 100%;
         padding: 20px;
+        margin: 0;
     }
 
     .sobre-conteudo p {
@@ -326,6 +352,13 @@
     .container {
         padding: 40px 25px;
         max-width: 1200px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
@@ -405,11 +438,20 @@
 
     .container {
         padding: 45px 30px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 450px;
+        max-width: 100%;
         padding: 25px;
+        margin: 0;
     }
 
     .home-grid {
@@ -458,11 +500,20 @@
 
     .container {
         padding: 50px 40px;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 480px;
+        max-width: 100%;
         padding: 28px;
+        margin: 0;
     }
 
     .home-grid {
@@ -528,12 +579,20 @@
 
     .container {
         padding: 60px 50px;
+        width: 100%;
         max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 500px;
+        max-width: 100%;
         padding: 30px;
+        margin: 0;
     }
 
     .home-grid {
@@ -599,12 +658,20 @@
 
     .container {
         padding: 70px 60px;
+        width: 100%;
         max-width: 1600px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 520px;
+        max-width: 100%;
         padding: 32px;
+        margin: 0;
     }
 
     .home-grid {
@@ -671,13 +738,21 @@
 
     .container {
         padding: 80px 80px;
+        width: 100%;
         max-width: 1800px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 550px;
+        max-width: 100%;
         padding: 35px;
         font-size: 18px;
+        margin: 0;
     }
 
     .home-grid {
@@ -755,13 +830,21 @@
 
     .container {
         padding: 100px 100px;
+        width: 100%;
         max-width: 2200px;
+        margin: 0 auto;
+    }
+
+    .container.home-grid,
+    .container.menu-grid {
+        display: grid;
     }
 
     .box {
-        max-width: 600px;
+        max-width: 100%;
         padding: 40px;
         font-size: 20px;
+        margin: 0;
     }
 
     .home-grid {
@@ -883,4 +966,3 @@
         text-decoration: underline;
     }
 }
-
